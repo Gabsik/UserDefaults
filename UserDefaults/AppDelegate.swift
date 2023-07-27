@@ -1,0 +1,25 @@
+//
+//  AppDelegate.swift
+//  UserDefaults
+//
+//  Created by User on 19.06.2023.
+//
+
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let firstScreen = AdressViewController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController(rootViewController: firstScreen)
+        
+        window?.makeKeyAndVisible()
+
+        return true
+        }
+}
